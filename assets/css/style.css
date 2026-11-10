@@ -273,12 +273,15 @@ kbd { font: 600 .85em/1 var(--font); padding: .2em .45em; border: 1px solid var(
 .fact-card p { margin: 0; }
 .fact-card strong { color: #fff; }
 .fact-card__big { font-size: 2.6rem; font-weight: 800; color: var(--yellow); line-height: 1; margin-bottom: 6px !important; }
-.team { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 18px; }
+.team { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 20px; }
 .person { display: flex; gap: 16px; background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 20px; }
 .person__avatar { flex: none; width: 52px; height: 52px; border-radius: 50%; background: var(--yellow); display: grid; place-items: center; color: var(--ink); }
 .person__name { font-size: 1.04rem; margin: 0 0 2px; }
 .person__title { color: var(--grey); font-size: .9rem; margin: 0 0 8px; font-weight: 600; }
 .person__contact { margin: 0; font-size: .92rem; display: flex; align-items: center; gap: 6px; }
+/* Phone numbers and e-mails never break across lines */
+a[href^="tel:"], a[href^="mailto:"] { white-space: nowrap; }
+.person > div { min-width: 0; }
 
 /* ---------- Catalog ---------- */
 .catalog { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
