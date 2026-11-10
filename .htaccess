@@ -1,0 +1,49 @@
+# Monitrade — Apache / cPanel configuration
+Options -Indexes
+DirectoryIndex index.php
+AddDefaultCharset UTF-8
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    # If the site is installed in a sub-folder, set it here (e.g. /monitrade/)
+    RewriteBase /
+
+    # Force HTTPS and drop "www." — uncomment once SSL is active on monitrade.net
+    # RewriteCond %{HTTPS} !=on [OR]
+    # RewriteCond %{HTTP_HOST} ^www\. [NC]
+    # RewriteRule ^ https://monitrade.net%{REQUEST_URI} [L,R=301]
+
+    # Never serve internal folders or dot-files
+    RewriteRule ^(app|config|database|docs|Documentation)(/|$) - [F,L]
+    RewriteRule (^|/)\.(?!well-known) - [F,L]
+    RewriteRule \.(sql|md|log|example\.php)$ - [F,L]
+
+    # Real files and folders (assets, uploads, admin) are served directly
+    RewriteCond %{REQUEST_FILENAME} -f [OR]
+    RewriteCond %{REQUEST_FILENAME} -d
+    RewriteRule ^ - [L]
+
+    # Everything else (including old monitrade.org addresses such as
+    # pages/contact.php, which are 301-redirected) goes to the front controller
+    RewriteRule ^ index.php [L,QSA]
+</IfModule>
+
+<IfModule mod_headers.c>
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+    ExpiresByType image/svg+xml "access plus 1 month"
+    ExpiresByType image/jpeg "access plus 1 month"
+    ExpiresByType image/png "access plus 1 month"
+    ExpiresByType image/gif "access plus 1 month"
+    ExpiresByType image/webp "access plus 1 month"
+</IfModule>
+
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/css application/javascript image/svg+xml application/xml
+</IfModule>
