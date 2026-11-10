@@ -128,7 +128,7 @@ $cairoPhone = trim(explode('/', setting('cairo_phone'))[0]);
   <div class="container site-footer__grid">
     <div class="site-footer__about">
       <img src="<?= asset('assets/img/logo.svg') ?>" alt="<?= e($siteName) ?>" width="190" height="52" class="site-footer__logo">
-      <p><?= e($tagline) ?>. Founded by <?= e(setting('founder', 'Eng. Ahmed Mounir')) ?>.</p>
+      <p><?= e($tagline) ?>, since <?= e(setting('founded_year', '1989')) ?>.</p>
       <a class="btn btn--primary btn--sm" href="<?= url('business-request') ?>">Send a business request</a>
     </div>
     <div>
@@ -160,7 +160,7 @@ $cairoPhone = trim(explode('/', setting('cairo_phone'))[0]);
   </div>
   <div class="site-footer__bottom">
     <div class="container site-footer__bottom-inner">
-      <p>&copy; <?= date('Y') ?> <?= e($siteName) ?>. All rights reserved.</p>
+      <p>&copy; <?= date('Y') ?> <a href="https://peta-core.com" target="_blank" rel="noopener">PetaCore</a>. All rights reserved.</p>
       <ul>
         <li><a href="<?= url('terms') ?>">Terms and Conditions</a></li>
         <li><a href="<?= url('privacy') ?>">Privacy Policy</a></li>

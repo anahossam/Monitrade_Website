@@ -22,7 +22,8 @@ partial('partials/page-head', ['heading' => 'Company Profile', 'crumbs' => ['Com
       </figure>
       <div class="fact-card">
         <p class="fact-card__big"><?= e(setting('founded_year', '1989')) ?></p>
-        <p>Founded by <strong><?= e(setting('founder', 'Eng. Ahmed Mounir')) ?></strong></p>
+        <p>Serving the Egyptian textile industry since then</p>
+        <?php if (setting('chairman')): ?><p>Chairman: <strong><?= e(setting('chairman')) ?></strong></p><?php endif; ?>
       </div>
     </aside>
   </div>

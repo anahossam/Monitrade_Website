@@ -8,7 +8,7 @@ $groups = [
         'company_name'  => ['Company name', 'text'],
         'tagline'       => ['Tagline', 'text'],
         'founded_year'  => ['Founded (year)', 'text'],
-        'founder'       => ['Founder', 'text'],
+        'chairman'      => ['Chairman', 'text'],
         'company_email' => ['Company e-mail (shown on the site; receives enquiries unless set in config)', 'email'],
     ],
     'Cairo office' => [

@@ -9,8 +9,8 @@ INSERT INTO settings (`key`, `value`) VALUES
 ('company_name',   'Monitrade'),
 ('tagline',        'Agent & Service Provider for the Textile Industry'),
 ('founded_year',   '1989'),
-('founder',        'Eng. Ahmed Mounir'),
-('company_email',  'monitrade@monitrade.org'),
+('chairman',       'Eng. Ihab Mounir'),
+('company_email',  'monitrade@monitrade.net'),
 ('cairo_address',  '114 Omar Ibn El Khattab St., Heliopolis, Cairo, Egypt'),
 ('cairo_phone',    '+20 2 2291 6457 / +20 2 2417 3734'),
 ('cairo_fax',      '+20 2 2290 4359'),
@@ -19,16 +19,15 @@ INSERT INTO settings (`key`, `value`) VALUES
 ('alex_phone',     '+20 3 546 8536'),
 ('alex_fax',       '+20 3 545 7121'),
 ('alex_mobile',    '+20 106 884 5414'),
-('home_intro',     'Since its start in 1989, Monitrade has sold hundreds of Truetzschler, Zinser and Schlumberger machines in Egypt and millions of Euros worth of spare parts. All business partners who are and were part of the Monitrade family enjoyed quality customer service to their clients by our staff.\n\nMonitrade has a reliable distribution network that reaches almost all Egyptian industrial cities to ensure speedy delivery of spare and consumable parts to our customers. Monitrade has warehouses in Cairo and Alexandria to keep consumable parts for the convenience of our customers in urgent times. For customers who prefer to deal in Egyptian pounds, Monitrade will buy the product in foreign currency and resell it to the customer at the equivalent price in Egyptian pounds. In short, we will go to any length to provide our customers with the best sales experience and solve almost any problem they might have.\n\nOur sales personnel are also experts in the textile field: Mr. Ahmed Mounir, the chairman, holds a Master''s degree in spinning from the University of Alexandria, and Mr. Nabil, our senior salesman, holds a postgraduate diploma in Textiles from Leeds University, UK. Each has more than 35 years of experience with textile industrial problems.\n\nMonitrade has two offices — one in Cairo and one in Alexandria — to ensure that we are always reachable for our clients. We also start our sales cycle early by being present at major textile exhibitions, whether international (ITMA) or with our own booth at local ones (ITCE).'),
+('home_intro',     'Since its start in 1989, Monitrade has sold hundreds of Truetzschler, Zinser and Schlumberger machines in Egypt and millions of Euros worth of spare parts. All business partners who are and were part of the Monitrade family enjoyed quality customer service to their clients by our staff.\n\nMonitrade has a reliable distribution network that reaches almost all Egyptian industrial cities to ensure speedy delivery of spare and consumable parts to our customers. Monitrade has warehouses in Cairo and Alexandria to keep consumable parts for the convenience of our customers in urgent times. For customers who prefer to deal in Egyptian pounds, Monitrade will buy the product in foreign currency and resell it to the customer at the equivalent price in Egyptian pounds. In short, we will go to any length to provide our customers with the best sales experience and solve almost any problem they might have.\n\nOur sales personnel are also experts in the textile field: Mr. Nabil, our senior salesman, holds a postgraduate diploma in Textiles from Leeds University, UK, and has more than 35 years of experience with textile industrial problems.\n\nMonitrade has two offices — one in Cairo and one in Alexandria — to ensure that we are always reachable for our clients. We also start our sales cycle early by being present at major textile exhibitions, whether international (ITMA) or with our own booth at local ones (ITCE).'),
 ('profile_who',    'Monitrade is a leading textile agency located in Egypt. Since 1989 Monitrade has been dealing with the biggest names in the industry, serving them and looking after their needs.\n\nAlmost no company in the Egyptian spinning industry hasn''t dealt with Monitrade — representing highly trusted brand names in the industry like Bräcker, N. Schlumberger and many more.'),
 ('profile_why',    'Monitrade always serves you on time.\nMonitrade understands the Egyptian textile industry.\nMonitrade provides solutions, not only sales.\nMonitrade cares about your profitability.\nMonitrade is here to stay.\nMonitrade is here to grow.');
 
 -- ---------------------------------------------------------------- team
 INSERT INTO team_members (name, title, phone, email, sort_order) VALUES
-('Eng. Ahmed Mounir',     'Founder & Chairman',              '',                 '', 1),
-('Eng. Ihab Mounir',      'Chief Executive Officer',         '+20 100 199 0306', '', 2),
-('Eng. Mohamed Naeem',    'Technical Manager — Cairo',       '+20 100 399 4228', '', 3),
-('Eng. Emad El-Dessouki', 'Technical Manager — Alexandria',  '',                 '', 4);
+('Eng. Ihab Mounir',      'Chairman',                        '+20 100 199 0306', '', 1),
+('Eng. Mohamed Naeem',    'Technical Manager — Cairo',       '+20 100 399 4228', '', 2),
+('Eng. Emad El-Dessouki', 'Technical Manager — Alexandria',  '+20 100 191 0324', '', 3);
 
 -- ---------------------------------------------------------------- products
 INSERT INTO products (section, category, name, slug, model, specs, offer, image, sort_order) VALUES

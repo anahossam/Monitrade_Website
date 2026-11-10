@@ -60,11 +60,9 @@ Open **https://monitrade.net/admin/setup.php** and create the first administrato
 
 ## 8. Check before going live
 
-Admin → **Company Settings** holds all the company details. Please confirm these:
+Admin → **Company Settings** holds all the company details. Before launch:
 
-- **E-mail:** the old address `monitrade@monitrade.org` is still used. Change it if you have a monitrade.net mailbox.
-- **Mobile numbers:** the old site listed "2010 1630386" (Cairo) and "+2016 8845414" (Alexandria). These were converted to today's Egyptian format: **+20 100 163 0386** (matches the notepad) and **+20 106 884 5414**. Please check the Alexandria one.
-- **Team:** the mobile number for Eng. Emad El-Dessouki is cut off in the notepad photo. Add it under Admin → Team.
+- **E-mail:** create the mailbox `monitrade@monitrade.net` (cPanel → Email Accounts). It is the address shown on the site and the default recipient of enquiries.
 
 ## 9. Optional: point monitrade.org to the new site
 
