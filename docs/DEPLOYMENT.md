@@ -23,6 +23,8 @@ Use either option.
 - **Git (recommended):** cPanel → **Git™ Version Control** → *Create* → clone the private GitHub repo `Monitrade_Website` into a folder such as `/home/cpaneluser/repositories/Monitrade_Website`. Then deploy to `public_html` by copying the files, or set the domain's document root to that folder. Private repos need a GitHub deploy key; cPanel's Git page explains how to add the SSH key.
 - **File Manager / FTP:** upload every file and folder in the repository into `public_html/`, including the hidden `.htaccess` files.
 
+**Remove the "under construction" page first.** `public_html/index.html` is the temporary holding page (its source is `maintenance/index.html`). Apache shows `index.html` before `index.php`, so delete it when the real site goes live. The rest of the `maintenance/` folder does not need to be uploaded.
+
 The site must sit at the **document root** (`public_html`) so that `.htaccess` applies. If you have to use a sub-folder, set `base_path` in the config and `RewriteBase` in `.htaccess` to that folder.
 
 ## 4. Configuration

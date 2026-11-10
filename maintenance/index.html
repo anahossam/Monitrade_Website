@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Monitrade — New website coming soon</title>
+<meta name="description" content="Monitrade — Agent & Service Provider for the Textile Industry in Egypt since 1989. Our new website is coming soon.">
+<meta name="robots" content="noindex">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23232427'/%3E%3Cpath d='M10 20h10l12 16 12-16h10v30H44V33l-10 13h-4L20 33v17H10z' fill='%23fff'/%3E%3Cpath d='M24 34l7 9C42 26 50 16 60 10 46 13 36 21 24 34z' fill='%23f2d800'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+  :root { --yellow:#f2d800; --grey:#6b6c6f; --ink:#232427; --ink-2:#393a3e; --line:#e4e4de; --tint:#f5f5f1; }
+  *, *::before, *::after { box-sizing: border-box; }
+  html, body { margin: 0; overflow-x: clip; }
+  body { font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; color: var(--ink-2); background: #fff; line-height: 1.6; min-height: 100vh; display: flex; flex-direction: column; }
+  a { color: var(--ink); text-decoration-color: var(--yellow); text-decoration-thickness: 2px; text-underline-offset: 3px; }
+  a[href^="tel:"], a[href^="mailto:"] { white-space: nowrap; }
+
+  .hero { position: relative; flex: 1; background: var(--yellow); overflow: hidden; }
+  .hero::after { content: ""; position: absolute; right: -10%; bottom: -30%; width: 60%; height: 140%; background: var(--ink); transform: rotate(18deg); opacity: .06; }
+  .wrap { position: relative; z-index: 1; width: 100%; max-width: 1200px; margin: 0 auto; padding: clamp(28px, 6vw, 72px) clamp(16px, 5vw, 56px); }
+  .logo { background: #fff; display: inline-block; padding: 12px 18px; border-radius: 14px; box-shadow: 0 8px 24px rgba(0,0,0,.08); }
+  .logo svg { display: block; width: clamp(180px, 30vw, 260px); height: auto; }
+  .badge { display: inline-flex; align-items: center; gap: 8px; margin: clamp(36px, 7vw, 72px) 0 18px; padding: 6px 14px; border-radius: 999px; background: var(--ink); color: #fff; font-size: .8rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; }
+  .badge i { width: 8px; height: 8px; border-radius: 50%; background: var(--yellow); animation: pulse 1.6s ease-in-out infinite; }
+  @keyframes pulse { 50% { opacity: .25; } }
+  @media (prefers-reduced-motion: reduce) { .badge i { animation: none; } }
+  h1 { margin: 0 0 16px; color: var(--ink); font-size: clamp(2.1rem, 5.6vw, 4rem); line-height: 1.08; font-weight: 800; letter-spacing: -.02em; max-width: 16ch; }
+  .lead { margin: 0; font-size: clamp(1.02rem, 1.6vw, 1.2rem); color: var(--ink-2); max-width: 56ch; }
+  .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
+  .btn { display: inline-flex; align-items: center; gap: 8px; padding: 13px 22px; border-radius: 999px; font-weight: 600; text-decoration: none; }
+  .btn--dark { background: var(--ink); color: #fff; }
+  .btn--light { background: #fff; color: var(--ink); }
+
+  .contacts { background: var(--tint); border-top: 1px solid var(--line); }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 20px; }
+  .card { background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 22px; }
+  .card h2 { margin: 0 0 10px; font-size: .8rem; letter-spacing: .12em; text-transform: uppercase; color: var(--grey); }
+  .card p { margin: 0 0 6px; }
+  .card strong { color: var(--ink); }
+
+  footer { background: var(--ink); color: #b9babe; font-size: .88rem; }
+  footer .wrap { padding-top: 18px; padding-bottom: 18px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; }
+  footer a { color: #fff; }
+  footer p { margin: 0; }
+</style>
+</head>
+<body>
+<main class="hero">
+  <div class="wrap">
+    <span class="logo">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 110" role="img" aria-label="Monitrade – Since 1989">
+        <path d="M6 34h22l26 34 26-34h22v68H80V62L58 90h-8L28 62v40H6z" fill="#6b6c6f"/>
+        <path d="M10 38h16l24 31" fill="none" stroke="#fff" stroke-width="2" stroke-linejoin="round" opacity=".55"/>
+        <path d="M40 66l14 18C80 46 118 18 176 8c-58 0-98 22-134 58z" fill="#f2d800" stroke="#6b6c6f" stroke-width="1.5" stroke-linejoin="round"/>
+        <text x="110" y="86" font-family="Arial, Helvetica, sans-serif" font-size="56" font-weight="700" fill="#6b6c6f" letter-spacing="1">ONITRADE</text>
+        <text x="112" y="106" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#6b6c6f" letter-spacing="10.5">SINCE 1989</text>
+      </svg>
+    </span>
+
+    <p class="badge"><i aria-hidden="true"></i> Website under construction</p>
+    <h1>Our new website is on its way.</h1>
+    <p class="lead">Monitrade has been the agent and service provider for Egypt’s textile industry since 1989: spinning, weaving, dyeing and garment machinery, spare parts and technical support. While we finish the new site, our team is available as always.</p>
+    <div class="actions">
+      <a class="btn btn--dark" href="mailto:monitrade@monitrade.net">E-mail us</a>
+      <a class="btn btn--light" href="tel:+201001630386">Call +20 100 163 0386</a>
+    </div>
+  </div>
+</main>
+
+<section class="contacts">
+  <div class="wrap grid">
+    <div class="card">
+      <h2>Cairo Office</h2>
+      <p>114 Omar Ibn El Khattab St., Heliopolis, Cairo, Egypt</p>
+      <p>Tel: <a href="tel:+20222916457">+20 2 2291 6457</a> / <a href="tel:+20224173734">+20 2 2417 3734</a></p>
+      <p>Mobile: <a href="tel:+201001630386">+20 100 163 0386</a></p>
+    </div>
+    <div class="card">
+      <h2>Alexandria Office</h2>
+      <p>Mostafa Kamel Armed Forces Building No. 4, Floor 11, Flat 112, Alexandria, Egypt</p>
+      <p>Tel: <a href="tel:+2035468536">+20 3 546 8536</a></p>
+      <p>Mobile: <a href="tel:+201068845414">+20 106 884 5414</a></p>
+    </div>
+    <div class="card">
+      <h2>Talk to our team</h2>
+      <p><strong>Eng. Ihab Mounir</strong>, Chairman: <a href="tel:+201001990306">+20 100 199 0306</a></p>
+      <p><strong>Eng. Mohamed Naeem</strong>, Cairo: <a href="tel:+201003994228">+20 100 399 4228</a></p>
+      <p><strong>Eng. Emad El-Dessouki</strong>, Alexandria: <a href="tel:+201001910324">+20 100 191 0324</a></p>
+      <p><a href="mailto:monitrade@monitrade.net">monitrade@monitrade.net</a></p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>Monitrade — Agent &amp; Service Provider for the Textile Industry</p>
+    <p>&copy; 2026 <a href="https://peta-core.com" target="_blank" rel="noopener">PetaCore</a>. All rights reserved.</p>
+  </div>
+</footer>
+</body>
+</html>
